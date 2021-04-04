@@ -2,6 +2,8 @@
 
 A simple Cypress plugin to run benchmark tests.
 
+Cypress is **not** meant to be used as a performance testing tool since it has some overhead that causes things to run slower. However, if you're already using Cypress and want to get some benchmarks on the performance of your app, this will at least give you a good starting point.
+
 ## Setup
 
 `npm install --save-dev cypress-benchmark`
