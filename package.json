@@ -1,0 +1,16 @@
+{
+  "name": "cypress-benchmark",
+  "version": "1.0.0",
+  "description": "A Cypress plugin to benchmark tests",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": ["cypress", "benchmark", "performance"],
+  "author": "Adrian Foong <adrian_foong@hotmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "cypress": ">=4.x"
+  },
+  "dependencies": {
+    "deepmerge": "^4.2.2"
+  }
+}
