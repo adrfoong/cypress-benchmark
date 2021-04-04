@@ -1,6 +1,6 @@
 {
   "name": "cypress-benchmark",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Cypress plugin to benchmark tests",
   "main": "index.js",
   "scripts": {},
