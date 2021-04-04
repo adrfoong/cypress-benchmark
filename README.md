@@ -57,7 +57,7 @@ benchmark('My Benchmark Test', () => {
 })
 ```
 
-An alternative to importing the test wrapper in every spec file is to add it to the global scope in the support file where you import `commands`:
+An alternative to importing the test wrapper in every spec file is to add it to the global scope in the support file where you would import `commands`:
 
 ```js
 import benchmark from 'cypress-benchmark';
@@ -73,7 +73,22 @@ Now you should have `benchmark` available globally just like `it` and `describe`
 
 Runs a test and compiles measures recorded in the test.
 
+#### `name: String`
+*Required*
+
+Name of the benchmark, similar in hierarchy to a `describe`
+
+#### `options: Object`
+
+An optional set of parameters described [below](#Options).
+
+#### `test: Function`
+*Required*
+
+The test function to run.
+
 `benchmark` should be used in conjunction with the support commands `cy.mark` and `cy.measure` which are just wrappers for the respective `performance` methods.
+
 
 ```js
 import benchmark from 'cypress-benchmark';
@@ -117,17 +132,17 @@ Should result in something like this in your output file:
 
 `benchmark` supports an optional second parameter which allows the following options to be set:
 
-#### `merge`: `Boolean`
+#### `merge: Boolean`
 Default: `true`
 
 Determines if the new results should be merged in with the existing results. Setting to `false` will overwrite the output file.
 
-#### `runCount`: `Number`
+#### `runCount: Number`
 Default: `1`
 
 Number of times to run the `test`
 
-#### `outPath`: `String`
+#### `outPath: String`
 Default: `'benchmark.json'`
 
 File path to write the results to. The path is relative to the Cypress root.
