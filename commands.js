@@ -15,7 +15,7 @@ function recordMeasure(name, measure) {
 				[name]: [measure.duration],
 			},
 		};
-	} else if (!Cypress.measures[specName]) {
+	} else if (!Cypress.measures[specName] || !Cypress.measures[specName][name]) {
 		Cypress.measures[specName] = {
 			[name]: [measure.duration],
 		};

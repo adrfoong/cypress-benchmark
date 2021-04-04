@@ -7,6 +7,11 @@
   "keywords": ["cypress", "benchmark", "performance"],
   "author": "Adrian Foong <adrian_foong@hotmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/adrfoong/cypress-benchmark",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrfoong/cypress-benchmark.git"
+  },
   "peerDependencies": {
     "cypress": ">=4.x"
   },
